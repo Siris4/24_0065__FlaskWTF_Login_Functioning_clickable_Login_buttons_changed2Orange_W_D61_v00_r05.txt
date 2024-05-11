@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Secrets</title>
+    <style>
+        /* Custom button color override */
+        .btn-primary {
+            background-color: #ff5f00; /* Fluorescent orange color */
+            border-color: #ff5f00; /* Ensure the border is the same color */
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #ff4500; /* A slightly darker shade for hover state */
+            border-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Greetings Traveler</h1>
+            <p>Are you ready to discover my secret?</p>
+            <form method="GET" action="{{ url_for('login') }}">
+                <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
